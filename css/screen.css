@@ -165,6 +165,75 @@ footer .valid-badge {
   margin: 1.5rem -4%;
 }
 
+.photo-slider {
+  margin: 1.5rem -4%;
+}
+
+.slider-track {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.photo-slider .slider-slide {
+  background-color: #ffffff;
+  border: 0.06rem solid #d7d2c8;
+  box-shadow: 0 0.4rem 1rem rgba(18, 35, 63, 0.08);
+  margin: 0;
+  overflow: hidden;
+}
+
+.slider-slide img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+}
+
+.slider-slide:first-child img {
+  object-position: center 28%;
+}
+
+.slider-slide figcaption {
+  padding: 0 1rem 1rem;
+}
+
+.slider-controls {
+  align-items: center;
+  display: none;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.photo-slider.is-enhanced .slider-controls {
+  display: flex;
+}
+
+.slider-controls button {
+  background-color: #0d7377;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.55rem 1rem;
+}
+
+.slider-controls button:hover,
+.slider-controls button:focus {
+  background-color: #095c5f;
+}
+
+.slider-controls button:focus-visible {
+  outline: 0.18rem solid #12233f;
+  outline-offset: 0.18rem;
+}
+
+.slider-status {
+  margin: 0;
+  min-width: 6rem;
+  text-align: center;
+}
+
 .page-index ol {
   list-style: none;
   margin-left: 0;
@@ -279,6 +348,11 @@ footer .valid-badge {
   }
 
   .page-index figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .photo-slider {
     margin-left: 0;
     margin-right: 0;
   }

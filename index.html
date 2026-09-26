@@ -32,10 +32,31 @@
       <article>
         <h1>Technology Journey</h1>
         <p>I am Luis Eduardo Brito, a software engineer and founder based in Sao Paulo. My work sits at the intersection of financial infrastructure, cloud systems, and network security.</p>
-        <figure>
-          <img src="media/images/bitcapital.jpg" alt="Bit Capital offices in Sao Paulo, Brazil">
-          <figcaption>Bit Capital offices in Sao Paulo, where I built open banking infrastructure.</figcaption>
-        </figure>
+        <div class="photo-slider" data-slider aria-label="Highlights from my technology journey">
+          <div class="slider-track">
+            <figure class="slider-slide" data-slide>
+              <img src="media/images/profile.jpg" alt="Professional portrait of Luis Eduardo Brito">
+              <figcaption>Building technology starts with the people and experiences behind the work.</figcaption>
+            </figure>
+            <figure class="slider-slide" data-slide>
+              <img src="media/images/bitcapital.jpg" alt="Bit Capital offices in Sao Paulo, Brazil">
+              <figcaption>Bit Capital offices in Sao Paulo, where I built open banking infrastructure.</figcaption>
+            </figure>
+            <figure class="slider-slide" data-slide>
+              <img src="media/images/speakrfm.jpg" alt="Speakr.fm collaborative playlist interface">
+              <figcaption>Speakr.fm was an early experiment in social products and shared media.</figcaption>
+            </figure>
+          </div>
+          <div class="slider-controls">
+            <button type="button" data-slider-previous>Previous</button>
+            <p class="slider-status" aria-live="polite">
+              Slide
+              <span data-current-slide>1</span>
+              of 3
+            </p>
+            <button type="button" data-slider-next>Next</button>
+          </div>
+        </div>
         <section>
           <h2>How I Got Here</h2>
           <p>I started as a freelance web developer, then moved through internships, consulting, and product companies. Over time I shifted from writing individual features to designing platforms that other teams could build on.</p>
