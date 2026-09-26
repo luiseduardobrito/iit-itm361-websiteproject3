@@ -34,13 +34,23 @@
         <p>Explore key places around Illinois Institute of Technology's Mies Campus in Chicago. The interactive map will highlight academic, student, and architectural landmarks.</p>
         <section>
           <h2>Featured Campus Locations</h2>
-          <div id="campus-map" role="region" aria-label="Map of featured Illinois Tech campus locations">
-            <p>The interactive campus map will appear here when the Google Maps integration is added.</p>
+          <div id="campus-map" data-api-key="YOUR_GOOGLE_MAPS_API_KEY" role="region" aria-label="Map of featured Illinois Tech campus locations" aria-describedby="map-status">
+            <p>Loading the interactive campus map...</p>
           </div>
-          <ul>
-            <li>Wishnick Hall</li>
-            <li>McCormick Tribune Campus Center</li>
-            <li>S. R. Crown Hall</li>
+          <p id="map-status" class="map-status" role="status">Add a Google Maps API key to load the interactive map.</p>
+          <ul class="map-locations">
+            <li>
+              <strong>Wishnick Hall</strong>
+              Home to science classrooms, laboratories, and academic departments.
+            </li>
+            <li>
+              <strong>McCormick Tribune Campus Center</strong>
+              A student gathering place designed by architect Rem Koolhaas.
+            </li>
+            <li>
+              <strong>S. R. Crown Hall</strong>
+              Mies van der Rohe's landmark home for the College of Architecture.
+            </li>
           </ul>
         </section>
       </article>

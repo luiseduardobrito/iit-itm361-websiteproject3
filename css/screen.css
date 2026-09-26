@@ -346,6 +346,78 @@ footer .valid-badge {
   color: #6b4f3a;
 }
 
+.page-maps main {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 2.5rem 0;
+  width: 92%;
+}
+
+.page-maps article > p:first-of-type {
+  max-width: 46rem;
+}
+
+.page-maps section {
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 1.5rem rgba(18, 35, 63, 0.08);
+  margin-top: 2rem;
+  padding: 1.5rem 5%;
+}
+
+#campus-map {
+  align-items: center;
+  background-color: #e8eef2;
+  border: 0.12rem solid #0d7377;
+  box-sizing: border-box;
+  display: grid;
+  justify-items: center;
+  min-height: 24rem;
+  padding: 2rem 8%;
+  text-align: center;
+  width: 100%;
+}
+
+#campus-map.is-loaded {
+  display: block;
+  padding: 0;
+}
+
+#campus-map.needs-api-key,
+#campus-map.map-error {
+  border-style: dashed;
+}
+
+.map-status {
+  background-color: #e8eef2;
+  border-left: 0.25rem solid #0d7377;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+}
+
+.map-status.is-success {
+  background-color: #e4f2ec;
+}
+
+.page-maps .map-locations {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+  margin: 1.5rem 0 0;
+}
+
+.map-locations li {
+  border-left: 0.25rem solid #0d7377;
+  padding: 0.75rem 1rem;
+}
+
+.map-locations strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
 @media screen and (max-width: 62em) {
   h1 {
     font-size: 1.85rem;
@@ -382,6 +454,14 @@ footer .valid-badge {
 }
 
 @media screen and (min-width: 40em) {
+  #campus-map {
+    min-height: 32rem;
+  }
+
+  .page-maps .map-locations {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .page-resume {
     font-size: 1rem;
   }
