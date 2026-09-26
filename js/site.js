@@ -156,12 +156,6 @@
       return;
     }
 
-    if (!apiKey || apiKey === "YOUR_GOOGLE_MAPS_API_KEY") {
-      mapElement.classList.add("needs-api-key");
-      status.textContent = "Add your restricted Google Maps API key to maps.html to load the map.";
-      return;
-    }
-
     window.initializeIitCampusMap = () => {
       renderCampusMap(mapElement, status);
     };
