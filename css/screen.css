@@ -186,19 +186,20 @@ footer .valid-badge {
 }
 
 .page-resume main {
-  margin: 2rem auto;
+  box-sizing: border-box;
+  margin: 1rem auto;
   padding: 0;
-  width: 960px;
+  width: 92%;
 }
 
 .page-resume main > article {
   background-color: #ffffff;
   box-shadow: 0 0.5rem 1.5rem rgba(18, 35, 63, 0.08);
-  padding: 2.5rem 3rem;
+  padding: 1.25rem 5%;
 }
 
 .page-resume {
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .page-resume main > article > header {
@@ -206,7 +207,7 @@ footer .valid-badge {
 }
 
 .page-resume main > article > header figure {
-  width: 12rem;
+  width: 8.5rem;
 }
 
 .page-resume section {
@@ -281,14 +282,6 @@ footer .valid-badge {
     margin-left: 0;
     margin-right: 0;
   }
-
-  .page-resume main {
-    width: 94%;
-  }
-
-  .page-resume main > article {
-    padding: 1.75rem 1.5rem;
-  }
 }
 
 @media screen and (max-width: 40em) {
@@ -305,11 +298,69 @@ footer .valid-badge {
     width: 90%;
   }
 
-  .page-resume main > article > header figure {
-    width: 8.5rem;
-  }
-
   .page-hobbies section:first-of-type {
     padding: 1.25rem 5%;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .page-resume {
+    font-size: 1rem;
+  }
+
+  .page-resume main {
+    margin: 1.5rem auto;
+    width: 90%;
+  }
+
+  .page-resume main > article {
+    padding: 2rem 2.25rem;
+  }
+
+  .page-resume main > article > header {
+    align-items: start;
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 10rem;
+  }
+
+  .page-resume main > article > header figure {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    margin: 0;
+    width: 10rem;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .page-resume {
+    font-size: 1.0625rem;
+  }
+
+  .page-resume main {
+    margin: 2rem auto;
+    width: 960px;
+  }
+
+  .page-resume main > article {
+    padding: 2.5rem 3rem;
+  }
+
+  .page-resume main > article > header {
+    column-gap: 3rem;
+    grid-template-columns: minmax(0, 1fr) 12rem;
+    margin-bottom: 2rem;
+  }
+
+  .page-resume main > article > header figure {
+    width: 12rem;
+  }
+
+  .page-resume h1 {
+    font-size: 2.5rem;
+  }
+
+  .page-resume section {
+    margin-bottom: 1.75rem;
   }
 }
