@@ -209,6 +209,10 @@ footer .valid-badge {
   display: flex;
 }
 
+.photo-slider.is-enhanced .slider-slide[hidden] {
+  display: none;
+}
+
 .slider-controls button {
   background-color: #0d7377;
   border: 0;
